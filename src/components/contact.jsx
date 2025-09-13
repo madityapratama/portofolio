@@ -2,19 +2,20 @@ import { Mail, Phone, MapPin, Github, Instagram, Send } from "lucide-react";
 
 function Contact() {
   return (
-    <div
+    <section
       id="contact"
-      className="flex-1 bg-gradient-to-r from-[#0d1117] via-gray-800 to-blue-900 min-h-screen px-20 py-20"
+      className="flex-1 bg-gradient-to-r from-[#0d1117] via-gray-800 to-blue-900 min-h-screen px-6 md:px-20 py-20"
     >
-      <h2 className="font-poppins text-4xl font-bold mb-10 text-white">
+      <h2 className="font-poppins text-3xl md:text-4xl font-bold mb-10 text-white text-center md:text-left">
         Contact Information
       </h2>
 
       <div className="grid md:grid-cols-2 gap-10">
         {/* Bagian Info Kontak */}
-        <div className="space-y-6 text-gray-300">
+        <div className="space-y-6 text-gray-300 text-lg">
           <p className="flex items-center gap-3">
-            <MapPin className="text-blue-500" /> Banjarmasin, Kalimantan Selatan, Indonesia
+            <MapPin className="text-blue-500" /> Banjarmasin, Kalimantan Selatan,
+            Indonesia
           </p>
           <p className="flex items-center gap-3">
             <Mail className="text-blue-500" /> madityapratama12.ap@email.com
@@ -26,20 +27,22 @@ function Contact() {
             <Phone className="text-blue-500" /> +62 851 4778 7940 (Telephone)
           </p>
           <p className="flex items-center gap-3">
-            <Github className="text-blue-500" />{" "}
+            <Github className="text-blue-500" />
             <a
               href="https://github.com/madityapratama"
               target="_blank"
+              rel="noreferrer"
               className="hover:underline"
             >
               github.com/madityapratama
             </a>
           </p>
           <p className="flex items-center gap-3">
-            <Instagram className="text-blue-500" />{" "}
+            <Instagram className="text-blue-500" />
             <a
               href="https://www.instagram.com/dit.yap/"
               target="_blank"
+              rel="noreferrer"
               className="hover:underline"
             >
               @dit.yap
@@ -49,9 +52,9 @@ function Contact() {
 
         {/* Bagian Form */}
         <form
-          action="https://formspree.io/f/mnnbrgyy" // ganti dengan endpoint formspree kamu
+          action="https://formspree.io/f/mnnbrgyy" // ganti dengan endpoint Formspree-mu
           method="POST"
-          className="bg-gray-900/60 p-6 rounded-xl shadow-lg space-y-4"
+          className="bg-gray-900/70 p-6 rounded-xl shadow-lg space-y-4"
         >
           <input
             type="text"
@@ -83,13 +86,13 @@ function Contact() {
           ></textarea>
           <button
             type="submit"
-            className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md shadow-md transition"
+            className="flex items-center justify-center gap-2 w-full md:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-md shadow-md transition"
           >
-            <Send />Send Message
+            <Send /> Send Message
           </button>
         </form>
       </div>
-    </div>
+    </section>
   );
 }
 
