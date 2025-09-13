@@ -1,8 +1,7 @@
-// pages/_app.js atau _app.tsx
-import React from 'react';
-import '../styles/globals.css'; // jika ada style global
+import type { AppProps } from "next/app";
+import "../styles/globals.css"; // style global
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
 }
 
