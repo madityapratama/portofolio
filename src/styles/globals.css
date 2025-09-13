@@ -20,6 +20,7 @@
 /* Smooth transitions for theme changes */
 html {
   @apply transition-colors duration-300;
+  scroll-behavior: smooth;
 }
 
 /* Custom scrollbar */
