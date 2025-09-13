@@ -7,7 +7,7 @@ function aboutMe() {
       className="flex-1 bg-gradient-to-r from-[#0d1117] via-gray-800 to-blue-900 text-white py-20 px-6 md:px-20"
     >
       {/* Title */}
-      <h2 className="font-poppins text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">
+      <h2 className="font-poppins text-3xl md:text-4xl font-bold mb-6 text-center md:text-left pt-40">
         About Me
       </h2>
 
