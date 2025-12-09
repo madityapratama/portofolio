@@ -46,7 +46,7 @@ function aboutMe() {
         </a>
 
         <a
-          href="/cvSaya.pdf" // arahkan ke file CV
+          href="/CVsaya2.pdf" // arahkan ke file CV
           className="flex items-center gap-2 px-6 py-3 border border-blue-500 text-white hover:bg-blue-500 hover:text-white rounded-lg transition"
         >
           <FileUser size={18} /> Check My CV
